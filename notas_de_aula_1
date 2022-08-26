@@ -1,2 +1,39 @@
 Instalar a versão 13.1 do Quartus e a forma de multiple Download
 
+Símbolos dos operadores lógicos:
+
+A
+-------|---                                               
+       |    --          S = AB                            
+       |      -- -------           Porta lógica AND       
+       |    --
+-------|---
+B
+
+
+A
+       ------
+---------    ----
+        --      --      S = A+B
+         --       --  ---------    Porta lógica OR
+        --      --
+---------    ----
+       ------
+B
+
+Tabela lógica:
+
+_A_|_B_|_AND__|_OR__
+_0_|_0_|__0___|__0__
+_0_|_1_|__0___|__1__
+_1_|_0_|__0___|__1__
+_1_|_1_|__1___|__1__
+
+
+Criar um diagrama de blocos
+Criar uma porta lógica AND com duas entradas A e B
+Compilar o circuito
+Abrir o University Program VWF
+Importar os nodes clicando duas vezes no lado esquerdo
+Inserir ondas para cada pino de entrada 
+Rodar a simulação
