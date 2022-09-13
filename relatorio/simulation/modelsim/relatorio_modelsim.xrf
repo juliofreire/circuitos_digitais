@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/projetos/relatorio/relatorio.vhd
+source_file = 1, C:/altera/projetos/relatorio/db/relatorio.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = relatorio
+instance = comp, \q1~output\, q1~output, relatorio, 1
+instance = comp, \q2~output\, q2~output, relatorio, 1
+instance = comp, \a~input\, a~input, relatorio, 1
+instance = comp, \b~input\, b~input, relatorio, 1
+instance = comp, \q1~0\, q1~0, relatorio, 1
+instance = comp, \q2~0\, q2~0, relatorio, 1

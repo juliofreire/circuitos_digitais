@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity relatorio is
+port(
+	a, b : in bit;
+	q1, q2: out bit
+);
+
+end relatorio
+
+architecture main of relatorio is
+
+begin
+q1 <= a and b; -- response of question 1
+q2 <= a or b; -- response of question 2
+end architecture 
