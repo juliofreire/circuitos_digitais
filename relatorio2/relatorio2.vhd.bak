@@ -1,0 +1,46 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity relatorio2 is
+port(
+	a, b, c : in bit;
+	s1, s2: out bit
+);
+
+end relatorio2;
+
+architecture main of relatorio2 is
+	signal s11, s12, s13: bit;
+	signal s21, s22, s23, s24: bit;
+	
+	component and_gate is
+		port(in1, in2 : in bit;
+			out1 : out bit);
+	end component;
+	component or_gate is
+		port(in1, in2 : in bit;
+			out1 : out bit);
+	end component;
+	component xor_gate is
+		port(in1, in2 : in bit;
+			out1 : out bit);
+	end component;
+	component xnor_gate is
+		port(in1, in2 : in bit;
+			out1 : out bit);
+	end component;
+		
+begin
+	
+	inst11: or_gate PORT MAP(in1 => b, in2 => c, s11 => out1);
+	inst12: and_gate PORT MAP(in1 => b, in2 => c, s12 => out1);
+	inst13: and_gate PORT MAP(in1 => a, in2 => s11, s13 => out1);
+	inst14: or_gate PORT MAP(in1 => s12, in2 => s13, s1 => out1);
+	
+	inst21: xnor_gate PORT MAP(in1 => b, in2 => c, s21 => out1);
+	inst22: xor_gate PORT MAP(in1 => b, in2 => c, s22 => out1);
+	inst23: and_gate PORT MAP(in1 => s21, in2 => a, s23 => out1);
+	inst24: and_gate PORT MAP(in1 => not(a), in2 => s22, s24 => out1);
+	inst25: or_gate PORT MAP(in1 => s23, in2 => s24, s2 => out1);
+
+end architecture main;

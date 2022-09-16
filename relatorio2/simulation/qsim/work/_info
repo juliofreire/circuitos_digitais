@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\projetos\circuitos_digitais\relatorio2\simulation\qsim
+vrelatorio2
+Z1 I?^H`Mb64ZJS7gk;Ka1VUl2
+Z2 VzY`c?C4LViEWK433DH16b0
+Z3 dC:\altera\projetos\circuitos_digitais\relatorio2\simulation\qsim
+Z4 w1663357891
+Z5 8relatorio2.vo
+Z6 Frelatorio2.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 o6F[Y<>NL>7fe19_UkdSn2
+!s85 0
+Z10 !s108 1663357893.980000
+Z11 !s107 relatorio2.vo|
+Z12 !s90 -work|work|relatorio2.vo|
+!s101 -O0
+vrelatorio2_vlg_check_tst
+!i10b 1
+!s100 A]ISon5VfznSW7;9c_T3Y1
+I6N50Mo]QTJ_E@:;ed]>H<2
+V2Hb;i[0mZG>TcMSUDSABm3
+R3
+Z13 w1663357890
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1663357894.083000
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+vrelatorio2_vlg_sample_tst
+!i10b 1
+!s100 ASEo_ZV0Nn9EX^_GaWH]71
+I_<=mW5IbaRGBh=mVDS@ON3
+VRGZRF7@j=7T6mgTUA^YzE2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vrelatorio2_vlg_vec_tst
+!i10b 1
+!s100 bHn:9;J=9oko=zTk?lFm=2
+Ih8JUaMOa<beY:7[IaBNW=3
+V94GBdCT`C5gYBP?5K8<?`1
+R3
+R13
+R14
+R15
+L0 183
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
