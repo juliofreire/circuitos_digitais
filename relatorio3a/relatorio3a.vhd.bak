@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- x1 question 1 output, x2 question 2 output
+-- x3 question 3 output
+entity relatorio3 is
+port(i0, i1, i2, i3, s0, s1: in bit;
+	  x: out bit
+	  );
+end relatorio3;
+
+architecture main of relatorio3 is
+begin
+
+x <= (not(s0) and ((not(s1) and i0) or (s1 and i2))) or (s0 and ((not(s1) and i1) or (s1 and i3)));
+
+end main;

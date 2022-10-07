@@ -1,0 +1,23 @@
+|relatorio3
+a => x1.IN0
+a => x2.DATAB
+b => x1.IN0
+b => x2.DATAA
+s => x1.IN1
+s => x1.IN1
+s => x2.OUTPUTSELECT
+i0 => x3.IN0
+i1 => x3.IN0
+i2 => x3.IN0
+i3 => x3.IN0
+s0 => x3.IN1
+s0 => x3.IN1
+s1 => x3.IN1
+s1 => x3.IN1
+s1 => x3.IN1
+s1 => x3.IN1
+x1 <= x1.DB_MAX_OUTPUT_PORT_TYPE
+x2 <= x2.DB_MAX_OUTPUT_PORT_TYPE
+x3 <= x3.DB_MAX_OUTPUT_PORT_TYPE
+
+

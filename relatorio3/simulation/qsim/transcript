@@ -1,0 +1,15 @@
+# do relatorio3.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module relatorio3
+# 
+# Top level modules:
+# 	relatorio3
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module relatorio3_vlg_sample_tst
+# -- Compiling module relatorio3_vlg_check_tst
+# -- Compiling module relatorio3_vlg_vec_tst
+# ** Error: Waveform1.vwf.vt(212): 'i1' already declared in this scope.
+# ** Error: C:/altera/13.1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./relatorio3.do line 4

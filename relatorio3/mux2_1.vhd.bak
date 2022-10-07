@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux2_1 is
+port(a, b, s: in bit;
+	  x: out bit
+	  );
+end mux2_1;
+
+architecture main of relatorio3 is
+begin
+with s select
+	x <= a when '0' else b;

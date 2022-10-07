@@ -1,0 +1,14 @@
+|relatorio3a
+i0 => x.IN0
+ia => x.IN0
+i2 => x.IN0
+i3 => x.IN0
+s0 => x.IN1
+s0 => x.IN1
+s1 => x.IN1
+s1 => x.IN1
+s1 => x.IN1
+s1 => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
