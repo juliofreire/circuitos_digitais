@@ -22,5 +22,5 @@
 # Loading work.relatorio3a_vlg_sample_tst
 # Loading work.relatorio3a_vlg_check_tst
 # Simulation passed !
-# ** Note: $finish    : Waveform.vwf.vt(158)
+# ** Note: $finish    : Waveform1.vwf.vt(185)
 #    Time: 1 us  Iteration: 0  Instance: /relatorio3a_vlg_vec_tst/tb_out

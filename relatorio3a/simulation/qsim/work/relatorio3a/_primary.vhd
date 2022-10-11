@@ -8,6 +8,7 @@ entity relatorio3a is
         i3              : in     vl_logic;
         s0              : in     vl_logic;
         s1              : in     vl_logic;
-        x               : out    vl_logic
+        x               : out    vl_logic;
+        x1              : out    vl_logic
     );
 end relatorio3a;

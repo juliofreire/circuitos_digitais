@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for relatorio3
-Fri Sep 30 11:55:35 2022
+Fri Oct 07 11:53:15 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -154,9 +154,9 @@ No paths to report.
 ; b          ; x1          ; 8.344 ;       ;       ; 8.827 ;
 ; b          ; x2          ; 8.640 ;       ;       ; 9.118 ;
 ; i0         ; x3          ; 7.994 ; 7.904 ; 8.437 ; 8.390 ;
-; i1         ; x3          ; 7.403 ;       ;       ; 7.768 ;
 ; i2         ; x3          ; 8.415 ; 8.325 ; 8.880 ; 8.833 ;
 ; i3         ; x3          ; 8.019 ;       ;       ; 8.410 ;
+; ia         ; x3          ; 7.403 ;       ;       ; 7.768 ;
 ; s          ; x1          ; 8.338 ; 8.259 ; 8.783 ; 8.736 ;
 ; s          ; x2          ; 8.634 ; 8.550 ; 9.079 ; 9.027 ;
 ; s0         ; x3          ; 8.508 ; 8.443 ; 9.016 ; 8.969 ;
@@ -174,9 +174,9 @@ No paths to report.
 ; b          ; x1          ; 8.006 ;       ;       ; 8.459 ;
 ; b          ; x2          ; 8.294 ;       ;       ; 8.742 ;
 ; i0         ; x3          ; 7.675 ; 7.634 ; 8.154 ; 8.038 ;
-; i1         ; x3          ; 7.158 ;       ;       ; 7.507 ;
 ; i2         ; x3          ; 8.077 ; 8.036 ; 8.579 ; 8.463 ;
 ; i3         ; x3          ; 7.742 ;       ;       ; 8.121 ;
+; ia         ; x3          ; 7.158 ;       ;       ; 7.507 ;
 ; s          ; x1          ; 8.052 ; 7.972 ; 8.485 ; 8.436 ;
 ; s          ; x2          ; 8.340 ; 8.255 ; 8.773 ; 8.719 ;
 ; s0         ; x3          ; 7.645 ; 7.599 ; 8.118 ; 8.013 ;
@@ -236,9 +236,9 @@ No paths to report.
 ; b          ; x1          ; 7.407 ;       ;       ; 7.773 ;
 ; b          ; x2          ; 7.705 ;       ;       ; 8.026 ;
 ; i0         ; x3          ; 7.095 ; 6.985 ; 7.429 ; 7.365 ;
-; i1         ; x3          ; 6.555 ;       ;       ; 6.814 ;
 ; i2         ; x3          ; 7.470 ; 7.360 ; 7.832 ; 7.768 ;
 ; i3         ; x3          ; 7.110 ;       ;       ; 7.391 ;
+; ia         ; x3          ; 6.555 ;       ;       ; 6.814 ;
 ; s          ; x1          ; 7.397 ; 7.308 ; 7.742 ; 7.682 ;
 ; s          ; x2          ; 7.695 ; 7.561 ; 8.040 ; 7.935 ;
 ; s0         ; x3          ; 7.555 ; 7.463 ; 7.946 ; 7.882 ;
@@ -256,9 +256,9 @@ No paths to report.
 ; b          ; x1          ; 7.102 ;       ;       ; 7.445 ;
 ; b          ; x2          ; 7.393 ;       ;       ; 7.690 ;
 ; i0         ; x3          ; 6.807 ; 6.743 ; 7.180 ; 7.056 ;
-; i1         ; x3          ; 6.333 ;       ;       ; 6.585 ;
 ; i2         ; x3          ; 7.166 ; 7.102 ; 7.566 ; 7.442 ;
 ; i3         ; x3          ; 6.863 ;       ;       ; 7.136 ;
+; ia         ; x3          ; 6.333 ;       ;       ; 6.585 ;
 ; s          ; x1          ; 7.139 ; 7.051 ; 7.477 ; 7.417 ;
 ; s          ; x2          ; 7.430 ; 7.296 ; 7.768 ; 7.662 ;
 ; s0         ; x3          ; 6.778 ; 6.710 ; 7.153 ; 7.036 ;
@@ -312,9 +312,9 @@ No paths to report.
 ; b          ; x1          ; 4.867 ;       ;       ; 5.593 ;
 ; b          ; x2          ; 5.025 ;       ;       ; 5.779 ;
 ; i0         ; x3          ; 4.623 ; 4.661 ; 5.204 ; 5.262 ;
-; i1         ; x3          ; 4.300 ;       ;       ; 4.913 ;
 ; i2         ; x3          ; 4.856 ; 4.894 ; 5.474 ; 5.532 ;
 ; i3         ; x3          ; 4.650 ;       ;       ; 5.309 ;
+; ia         ; x3          ; 4.300 ;       ;       ; 4.913 ;
 ; s          ; x1          ; 4.818 ; 4.872 ; 5.429 ; 5.501 ;
 ; s          ; x2          ; 4.976 ; 5.058 ; 5.587 ; 5.687 ;
 ; s0         ; x3          ; 4.914 ; 4.970 ; 5.547 ; 5.605 ;
@@ -332,9 +332,9 @@ No paths to report.
 ; b          ; x1          ; 4.668 ;       ;       ; 5.372 ;
 ; b          ; x2          ; 4.823 ;       ;       ; 5.554 ;
 ; i0         ; x3          ; 4.434 ; 4.499 ; 5.035 ; 5.055 ;
-; i1         ; x3          ; 4.151 ;       ;       ; 4.755 ;
 ; i2         ; x3          ; 4.658 ; 4.723 ; 5.294 ; 5.314 ;
 ; i3         ; x3          ; 4.486 ;       ;       ; 5.135 ;
+; ia         ; x3          ; 4.151 ;       ;       ; 4.755 ;
 ; s          ; x1          ; 4.649 ; 4.698 ; 5.249 ; 5.318 ;
 ; s          ; x2          ; 4.804 ; 4.880 ; 5.404 ; 5.500 ;
 ; s0         ; x3          ; 4.429 ; 4.493 ; 5.035 ; 5.062 ;
@@ -368,9 +368,9 @@ No synchronizer chains to report.
 ; b          ; x1          ; 8.344 ;       ;       ; 8.827 ;
 ; b          ; x2          ; 8.640 ;       ;       ; 9.118 ;
 ; i0         ; x3          ; 7.994 ; 7.904 ; 8.437 ; 8.390 ;
-; i1         ; x3          ; 7.403 ;       ;       ; 7.768 ;
 ; i2         ; x3          ; 8.415 ; 8.325 ; 8.880 ; 8.833 ;
 ; i3         ; x3          ; 8.019 ;       ;       ; 8.410 ;
+; ia         ; x3          ; 7.403 ;       ;       ; 7.768 ;
 ; s          ; x1          ; 8.338 ; 8.259 ; 8.783 ; 8.736 ;
 ; s          ; x2          ; 8.634 ; 8.550 ; 9.079 ; 9.027 ;
 ; s0         ; x3          ; 8.508 ; 8.443 ; 9.016 ; 8.969 ;
@@ -388,9 +388,9 @@ No synchronizer chains to report.
 ; b          ; x1          ; 4.668 ;       ;       ; 5.372 ;
 ; b          ; x2          ; 4.823 ;       ;       ; 5.554 ;
 ; i0         ; x3          ; 4.434 ; 4.499 ; 5.035 ; 5.055 ;
-; i1         ; x3          ; 4.151 ;       ;       ; 4.755 ;
 ; i2         ; x3          ; 4.658 ; 4.723 ; 5.294 ; 5.314 ;
 ; i3         ; x3          ; 4.486 ;       ;       ; 5.135 ;
+; ia         ; x3          ; 4.151 ;       ;       ; 4.755 ;
 ; s          ; x1          ; 4.649 ; 4.698 ; 5.249 ; 5.318 ;
 ; s          ; x2          ; 4.804 ; 4.880 ; 5.404 ; 5.500 ;
 ; s0         ; x3          ; 4.429 ; 4.493 ; 5.035 ; 5.062 ;
@@ -419,7 +419,7 @@ No synchronizer chains to report.
 ; b              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; a              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; s              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; i1             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ia             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; s0             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; i2             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; s1             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -508,7 +508,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Sep 30 11:55:33 2022
+    Info: Processing started: Fri Oct 07 11:53:12 2022
 Info: Command: quartus_sta relatorio3 -c relatorio3
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -556,8 +556,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4616 megabytes
-    Info: Processing ended: Fri Sep 30 11:55:35 2022
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Fri Oct 07 11:53:15 2022
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

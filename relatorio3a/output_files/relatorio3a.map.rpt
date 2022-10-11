@@ -1,5 +1,5 @@
 Analysis & Synthesis report for relatorio3a
-Fri Sep 30 12:02:44 2022
+Fri Oct 07 12:03:23 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 30 12:02:44 2022      ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 07 12:03:23 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; relatorio3a                                ;
 ; Top-level Entity Name              ; relatorio3a                                ;
@@ -50,7 +50,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 2                                          ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 7                                          ;
+; Total pins                         ; 8                                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -165,6 +165,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
 +----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
 ; relatorio3a.vhd                  ; yes             ; User VHDL File  ; C:/altera/projetos/circuitos_digitais/relatorio3a/relatorio3a.vhd ;         ;
+; mux_2x1.vhd                      ; yes             ; User VHDL File  ; C:/altera/projetos/circuitos_digitais/relatorio3a/mux_2x1.vhd     ;         ;
 +----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
 
 
@@ -173,11 +174,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 7                ;
+; I/O pins                 ; 8                ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; s0~input         ;
+; Maximum fan-out node     ; x~1              ;
 ; Maximum fan-out          ; 2                ;
-; Total fan-out            ; 16               ;
+; Total fan-out            ; 18               ;
 ; Average fan-out          ; 1.00             ;
 +--------------------------+------------------+
 
@@ -187,7 +188,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |relatorio3a               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 7    ; 0            ; |relatorio3a        ; work         ;
+; |relatorio3a               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 8    ; 0            ; |relatorio3a        ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -222,23 +223,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Sep 30 12:02:42 2022
+    Info: Processing started: Fri Oct 07 12:03:21 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relatorio3a -c relatorio3a
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file relatorio3a.vhd
     Info (12022): Found design unit 1: relatorio3a-main
     Info (12023): Found entity 1: relatorio3a
+Info (12021): Found 2 design units, including 1 entities, in source file mux_2x1.vhd
+    Info (12022): Found design unit 1: mux_2x1-main
+    Info (12023): Found entity 1: mux_2x1
 Info (12127): Elaborating entity "relatorio3a" for the top level hierarchy
+Info (12128): Elaborating entity "mux_2x1" for hierarchy "mux_2x1:insts1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 10 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 1 output pins
+    Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4713 megabytes
-    Info: Processing ended: Fri Sep 30 12:02:44 2022
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Fri Oct 07 12:03:23 2022
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

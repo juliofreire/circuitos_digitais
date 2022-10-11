@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Fri Sep 30 12:02:44 2022
+Analysis & Synthesis Status : Successful - Fri Oct 07 12:03:23 2022
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : relatorio3a
 Top-level Entity Name : relatorio3a
@@ -7,7 +7,7 @@ Total logic elements : 2
     Total combinational functions : 2
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 7
+Total pins : 8
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for relatorio3a
-Fri Sep 30 12:06:34 2022
+Fri Oct 07 12:03:45 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Sep 30 12:06:34 2022 ;
+; EDA Netlist Writer Status ; Successful - Fri Oct 07 12:03:45 2022 ;
 ; Revision Name             ; relatorio3a                           ;
 ; Top-level Entity Name     ; relatorio3a                           ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -93,12 +93,12 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Fri Sep 30 12:06:33 2022
+    Info: Processing started: Fri Oct 07 12:03:44 2022
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/altera/projetos/circuitos_digitais/relatorio3a/simulation/qsim/ relatorio3a -c relatorio3a
 Info (204019): Generated file relatorio3a.vo in folder "C:/altera/projetos/circuitos_digitais/relatorio3a/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4589 megabytes
-    Info: Processing ended: Fri Sep 30 12:06:34 2022
+    Info: Peak virtual memory: 4588 megabytes
+    Info: Processing ended: Fri Oct 07 12:03:45 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

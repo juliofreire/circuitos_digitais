@@ -1,5 +1,5 @@
 Fitter report for relatorio3
-Fri Sep 30 11:55:29 2022
+Fri Oct 07 11:53:08 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Fri Sep 30 11:55:29 2022      ;
+; Fitter Status                      ; Successful - Fri Oct 07 11:53:08 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; relatorio3                                 ;
 ; Top-level Entity Name              ; relatorio3                                 ;
@@ -166,7 +166,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; b        ; Incomplete set of assignments ;
 ; a        ; Incomplete set of assignments ;
 ; s        ; Incomplete set of assignments ;
-; i1       ; Incomplete set of assignments ;
+; ia       ; Incomplete set of assignments ;
 ; s0       ; Incomplete set of assignments ;
 ; i2       ; Incomplete set of assignments ;
 ; s1       ; Incomplete set of assignments ;
@@ -348,9 +348,9 @@ The pin-out file can be found in C:/altera/projetos/circuitos_digitais/relatorio
 ; a    ; A6    ; 8        ; 10           ; 31           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; b    ; L4    ; 3        ; 8            ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; i0   ; G9    ; 6        ; 33           ; 22           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
-; i1   ; G10   ; 6        ; 33           ; 22           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; i2   ; K13   ; 5        ; 33           ; 15           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; i3   ; L11   ; 4        ; 31           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
+; ia   ; G10   ; 6        ; 33           ; 22           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; s    ; K12   ; 5        ; 33           ; 11           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; s0   ; H12   ; 5        ; 33           ; 14           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
 ; s1   ; J13   ; 5        ; 33           ; 15           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ;
@@ -379,7 +379,7 @@ The pin-out file can be found in C:/altera/projetos/circuitos_digitais/relatorio
 ; J5       ; CONF_DONE          ; -                        ; -                ; Dedicated Programming Pin ;
 ; K6       ; nSTATUS            ; -                        ; -                ; Dedicated Programming Pin ;
 ; N5       ; DIFFIO_B1n, NCEO   ; Use as programming pin   ; ~ALTERA_NCEO~    ; Dual Purpose Pin          ;
-; G10      ; DIFFIO_R4n, DEV_OE ; Use as regular IO        ; i1               ; Dual Purpose Pin          ;
+; G10      ; DIFFIO_R4n, DEV_OE ; Use as regular IO        ; ia               ; Dual Purpose Pin          ;
 ; A6       ; CLKUSR             ; Use as regular IO        ; a                ; Dual Purpose Pin          ;
 ; A5       ; DATA0              ; As input tri-stated      ; ~ALTERA_DATA0~   ; Dual Purpose Pin          ;
 ; B5       ; ASDO               ; As input tri-stated      ; ~ALTERA_ASDO~    ; Dual Purpose Pin          ;
@@ -500,7 +500,7 @@ The pin-out file can be found in C:/altera/projetos/circuitos_digitais/relatorio
 ; G7       ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G8       ;            ;          ; VCCINT                                           ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; G9       ; 60         ; 6        ; i0                                               ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; G10      ; 59         ; 6        ; i1                                               ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; G10      ; 59         ; 6        ; ia                                               ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G11      ;            ; 6        ; VCCIO6                                           ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; G12      ;            ;          ; GND                                              ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G13      ; 55         ; 5        ; GND+                                             ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -607,7 +607,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; b    ; Input    ; --            ; (6) 1313 ps   ; --                    ; --  ; --   ;
 ; a    ; Input    ; (6) 1313 ps   ; --            ; --                    ; --  ; --   ;
 ; s    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; i1   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; ia   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; s0   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; i2   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; s1   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
@@ -627,7 +627,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - x1~0         ; 0                 ; 6       ;
 ; s                   ;                   ;         ;
 ;      - x1~0         ; 1                 ; 6       ;
-; i1                  ;                   ;         ;
+; ia                  ;                   ;         ;
 ;      - x3~1         ; 1                 ; 6       ;
 ; s0                  ;                   ;         ;
 ;      - x3~0         ; 1                 ; 6       ;
@@ -654,7 +654,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; i0~input ; 1                    ;
 ; s1~input ; 1                    ;
 ; i2~input ; 1                    ;
-; i1~input ; 1                    ;
+; ia~input ; 1                    ;
 ; s~input  ; 1                    ;
 ; a~input  ; 1                    ;
 ; b~input  ; 1                    ;
@@ -811,7 +811,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; b                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; a                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; s                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; i1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; ia                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; s0                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; i2                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; s1                 ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -882,7 +882,7 @@ Critical Warning (169085): No exact pin location assignment(s) for 12 pins of 12
     Info (169086): Pin b not assigned to an exact location on the device
     Info (169086): Pin a not assigned to an exact location on the device
     Info (169086): Pin s not assigned to an exact location on the device
-    Info (169086): Pin i1 not assigned to an exact location on the device
+    Info (169086): Pin ia not assigned to an exact location on the device
     Info (169086): Pin s0 not assigned to an exact location on the device
     Info (169086): Pin i2 not assigned to an exact location on the device
     Info (169086): Pin s1 not assigned to an exact location on the device
@@ -913,7 +913,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 8A does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  2 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  5 pins available
         Info (176213): I/O bank number 9 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  0 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -926,7 +926,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -934,9 +934,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/altera/projetos/circuitos_digitais/relatorio3/output_files/relatorio3.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5018 megabytes
-    Info: Processing ended: Fri Sep 30 11:55:30 2022
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 5034 megabytes
+    Info: Processing ended: Fri Oct 07 11:53:09 2022
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:05
 
 

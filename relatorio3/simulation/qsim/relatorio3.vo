@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "09/30/2022 11:55:45"
+// DATE "10/07/2022 11:53:17"
 
 // 
 // Device: Altera EP4CGX15BF14C6 Package FBGA169
@@ -33,7 +33,7 @@ module relatorio3 (
 	b,
 	s,
 	i0,
-	i1,
+	ia,
 	i2,
 	i3,
 	s0,
@@ -45,7 +45,7 @@ input 	a;
 input 	b;
 input 	s;
 input 	i0;
-input 	i1;
+input 	ia;
 input 	i2;
 input 	i3;
 input 	s0;
@@ -61,7 +61,7 @@ output 	x3;
 // b	=>  Location: PIN_L4,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // a	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // s	=>  Location: PIN_K12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// i1	=>  Location: PIN_G10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ia	=>  Location: PIN_G10,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // s0	=>  Location: PIN_H12,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // i2	=>  Location: PIN_K13,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // s1	=>  Location: PIN_J13,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -93,7 +93,7 @@ wire \i2~input_o ;
 wire \i0~input_o ;
 wire \x3~0_combout ;
 wire \i3~input_o ;
-wire \i1~input_o ;
+wire \ia~input_o ;
 wire \x3~1_combout ;
 
 
@@ -251,24 +251,24 @@ defparam \i3~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: IOIBUF_X33_Y22_N8
-cycloneiv_io_ibuf \i1~input (
-	.i(i1),
+cycloneiv_io_ibuf \ia~input (
+	.i(ia),
 	.ibar(gnd),
-	.o(\i1~input_o ));
+	.o(\ia~input_o ));
 // synopsys translate_off
-defparam \i1~input .bus_hold = "false";
-defparam \i1~input .simulate_z_as = "z";
+defparam \ia~input .bus_hold = "false";
+defparam \ia~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LCCOMB_X32_Y20_N10
 cycloneiv_lcell_comb \x3~1 (
 // Equation(s):
-// \x3~1_combout  = (\s0~input_o  & ((\x3~0_combout  & (\i3~input_o )) # (!\x3~0_combout  & ((\i1~input_o ))))) # (!\s0~input_o  & (\x3~0_combout ))
+// \x3~1_combout  = (\s0~input_o  & ((\x3~0_combout  & (\i3~input_o )) # (!\x3~0_combout  & ((\ia~input_o ))))) # (!\s0~input_o  & (\x3~0_combout ))
 
 	.dataa(\s0~input_o ),
 	.datab(\x3~0_combout ),
 	.datac(\i3~input_o ),
-	.datad(\i1~input_o ),
+	.datad(\ia~input_o ),
 	.cin(gnd),
 	.combout(\x3~1_combout ),
 	.cout());

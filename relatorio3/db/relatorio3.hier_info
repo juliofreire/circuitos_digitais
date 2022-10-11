@@ -6,18 +6,15 @@ b => x2.DATAA
 s => x1.IN1
 s => x1.IN1
 s => x2.OUTPUTSELECT
-i0 => x3.IN0
-i1 => x3.IN0
-i2 => x3.IN0
-i3 => x3.IN0
-s0 => x3.IN1
-s0 => x3.IN1
-s1 => x3.IN1
-s1 => x3.IN1
-s1 => x3.IN1
-s1 => x3.IN1
-x1 <= x1.DB_MAX_OUTPUT_PORT_TYPE
-x2 <= x2.DB_MAX_OUTPUT_PORT_TYPE
-x3 <= x3.DB_MAX_OUTPUT_PORT_TYPE
+i0 => si1.DATAB
+ia => si2.DATAB
+i2 => si1.DATAA
+i3 => si2.DATAA
+s0 => x3.OUTPUTSELECT
+s1 => si2.OUTPUTSELECT
+s1 => si1.OUTPUTSELECT
+x1 << x1.DB_MAX_OUTPUT_PORT_TYPE
+x2 << x2.DB_MAX_OUTPUT_PORT_TYPE
+x3 << x3.DB_MAX_OUTPUT_PORT_TYPE
 
 
