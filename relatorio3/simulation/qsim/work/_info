@@ -8,7 +8,7 @@ Z1 !s100 @62=zS=ED`eK_5l9XQKPJ1
 Z2 If^I[?QhU4n^d`mKOUdDUO2
 Z3 VEXkXZC`Rjnm[S:>iHB>zA0
 Z4 dC:\altera\projetos\circuitos_digitais\relatorio3\simulation\qsim
-Z5 w1665152631
+Z5 w1665713502
 Z6 8relatorio3.vo
 Z7 Frelatorio3.vo
 L0 31
@@ -19,7 +19,7 @@ Z9 !s90 -work|work|relatorio3.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1665152632.076000
+Z11 !s108 1665713504.812000
 Z12 !s107 relatorio3.vo|
 !s101 -O0
 vrelatorio3_vlg_check_tst
@@ -28,7 +28,7 @@ Z13 !s100 P2mNT9GW_9U0`KNec8VOb3
 Z14 Ia@j6W<RMK<;mYnJ93N7032
 Z15 V?RA[WzK6Kh<S5ioSEGgTO0
 R4
-Z16 w1665152629
+Z16 w1665713500
 Z17 8Waveform2.vwf.vt
 Z18 FWaveform2.vwf.vt
 L0 73
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1665152632.145000
+Z19 !s108 1665713504.893000
 Z20 !s107 Waveform2.vwf.vt|
 Z21 !s90 -work|work|Waveform2.vwf.vt|
 !s101 -O0

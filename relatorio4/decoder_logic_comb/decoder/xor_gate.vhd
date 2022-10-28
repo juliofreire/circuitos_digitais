@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity xor_gate is
+port(
+	in1, in2 : in bit;
+	out1 : out bit
+);
+end xor_gate;
+
+architecture main of xor_gate is
+
+begin
+out1 <= ((not(in1) and in2) or (in1 and not(in2)));
+
+end architecture main;

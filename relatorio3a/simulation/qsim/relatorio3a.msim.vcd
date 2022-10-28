@@ -3,7 +3,7 @@ $comment
 		vcd file relatorio3a.msim.vcd -direction
 $end
 $date
-	Fri Oct 07 12:03:46 2022
+	Thu Oct 13 23:02:58 2022
 $end
 $version
 	ModelSim Version 10.1d

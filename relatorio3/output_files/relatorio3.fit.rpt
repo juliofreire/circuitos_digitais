@@ -1,5 +1,5 @@
 Fitter report for relatorio3
-Fri Oct 07 11:53:08 2022
+Thu Oct 13 23:09:41 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Fri Oct 07 11:53:08 2022      ;
+; Fitter Status                      ; Successful - Thu Oct 13 23:09:41 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; relatorio3                                 ;
 ; Top-level Entity Name              ; relatorio3                                 ;
@@ -935,9 +935,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/altera/projetos/circuitos_digitais/relatorio3/output_files/relatorio3.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 5034 megabytes
-    Info: Processing ended: Fri Oct 07 11:53:09 2022
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Processing ended: Thu Oct 13 23:09:41 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+

@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity decoder is
+port(
+	a4, a3, a2, a1: in bit;
+	s6, s5, s4, s3, s2, s1, s0: out bit;
+);
+
+
+s6 <= '1' when (and not(a4) and ((not(a3) and not(a2)) or (a3 and a2 and a1)))
+a4'(a3'a2'+a3a2a1)
+
+s5 <= '1' when ((not (a4) and not (a3)) and ((not(a2) and (a1)) or (a2 and not(a1)) or (a2 and a1) or (not(a4) and a3 and a2 and a1)))
+a4'a3'(a2'a1 + a2a1' + a2a1) + a4'a3a2a1
+
+s4 <= '1' when ((not a3) and not(a2) and a1)
+a3'a2'a1 + a4'a2a1 + a4'a3a2'
+
+s3 <= '1' when ()
+a3'a2'a1 + a4'a3(a2'a1' + a2a1)
+
+s2 <= '1' when ()
+a4'a3'a2a1'
+
+s1 <= '1' when ()
+a4'a3(a2'a1 + a2a1')
+
+s0 <= '1' when ()
+a4'a2'(a3'a1 + a3a1')

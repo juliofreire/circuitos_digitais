@@ -1,0 +1,47 @@
+|decoder
+a4 => r.IN0
+a4 => r.IN0
+a4 => s6n.IN1
+a4 => s5n.IN0
+a4 => s5n.IN0
+a4 => s4n.IN0
+a4 => s0n.IN0
+a3 => r.IN1
+a3 => s6n.IN0
+a3 => s5n.IN1
+a3 => s0n.IN0
+a3 => s6n.IN0
+a3 => r.IN1
+a3 => s5n.IN1
+a3 => s0n.IN0
+a2 => r.IN0
+a2 => r.IN0
+a2 => s6n.IN1
+a2 => s5n.IN1
+a2 => s4n.IN1
+a2 => s2n.IN1
+a2 => s6n.IN1
+a2 => r.IN0
+a2 => r.IN0
+a2 => s4n.IN1
+a2 => s0n.IN1
+a1 => r.IN1
+a1 => r.IN1
+a1 => s6n.IN1
+a1 => s5n.IN1
+a1 => s4n.IN1
+a1 => s4n.IN1
+a1 => s0n.IN1
+a1 => r.IN1
+a1 => r.IN1
+a1 => s2n.IN1
+a1 => s0n.IN1
+s6 << s6.DB_MAX_OUTPUT_PORT_TYPE
+s5 << s5.DB_MAX_OUTPUT_PORT_TYPE
+s4 << s4.DB_MAX_OUTPUT_PORT_TYPE
+s3 << s3.DB_MAX_OUTPUT_PORT_TYPE
+s2 << s2.DB_MAX_OUTPUT_PORT_TYPE
+s1 << s1.DB_MAX_OUTPUT_PORT_TYPE
+s0 << s0.DB_MAX_OUTPUT_PORT_TYPE
+
+

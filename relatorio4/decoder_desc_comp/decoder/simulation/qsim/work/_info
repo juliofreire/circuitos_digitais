@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\projetos\circuitos_digitais\decoder\simulation\qsim
+vdecoder
+Z1 IPEGTEdh9:_EaFz;:b[hUj1
+Z2 VzFW^fjQX6eli4Ci1;2K:k3
+Z3 dC:\altera\projetos\circuitos_digitais\decoder\simulation\qsim
+Z4 w1666917555
+Z5 8decoder.vo
+Z6 Fdecoder.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|decoder.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 b]:o^]Mfm6YQG4KX?_BbE3
+!s85 0
+Z11 !s108 1666917557.857000
+Z12 !s107 decoder.vo|
+!s101 -O0
+vdecoder_vlg_check_tst
+!i10b 1
+Z13 !s100 URz>[XmLh00`@^=0Q1<110
+Z14 I?l::K;5_AIF]`M:KSA4i22
+Z15 VieO6f5Wj78;ib2JTHMI9h0
+R3
+Z16 w1666917553
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z19 !s108 1666917558.012000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R9
+vdecoder_vlg_sample_tst
+!i10b 1
+Z22 !s100 Kz]?2EEFPSTS_NRP8R]iB2
+Z23 IB@471_gkEg9@oRC^ZMe?=2
+Z24 V3USk1A@oj02YXAdGhNKg43
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vdecoder_vlg_vec_tst
+!i10b 1
+Z25 !s100 oZK6G95?Pb]6B5V>W>GHZ2
+Z26 I9OM9l@g8ZmIjMLTL?kjY92
+Z27 V9_SfU7d^<;VG3[I?m[kb82
+R3
+R16
+R17
+R18
+Z28 L0 320
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
