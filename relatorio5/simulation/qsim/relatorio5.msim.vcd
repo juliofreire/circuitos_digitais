@@ -1,0 +1,419 @@
+$comment
+	File created using the following command:
+		vcd file relatorio5.msim.vcd -direction
+$end
+$date
+	Fri Nov 11 12:08:54 2022
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module relatorio5_vlg_vec_tst $end
+$var reg 1 ! c $end
+$var reg 1 " I0 $end
+$var reg 1 # I1 $end
+$var reg 1 $ I2 $end
+$var reg 1 % I3 $end
+$var wire 1 & O0 $end
+$var wire 1 ' O1 $end
+$var wire 1 ( O2 $end
+$var wire 1 ) O3 $end
+$var wire 1 * Q0 $end
+$var wire 1 + Q1 $end
+$var wire 1 , Q2 $end
+$var wire 1 - Q3 $end
+$var wire 1 . sampler $end
+$scope module i1 $end
+$var wire 1 / gnd $end
+$var wire 1 0 vcc $end
+$var wire 1 1 unknown $end
+$var tri1 1 2 devclrn $end
+$var tri1 1 3 devpor $end
+$var tri1 1 4 devoe $end
+$var wire 1 5 Q3~output_o $end
+$var wire 1 6 Q2~output_o $end
+$var wire 1 7 Q1~output_o $end
+$var wire 1 8 Q0~output_o $end
+$var wire 1 9 O3~output_o $end
+$var wire 1 : O2~output_o $end
+$var wire 1 ; O1~output_o $end
+$var wire 1 < O0~output_o $end
+$var wire 1 = c~input_o $end
+$var wire 1 > I3~input_o $end
+$var wire 1 ? LD3|comb~0_combout $end
+$var wire 1 @ LD3|Q~combout $end
+$var wire 1 A I2~input_o $end
+$var wire 1 B LD2|comb~0_combout $end
+$var wire 1 C LD2|Q~combout $end
+$var wire 1 D I1~input_o $end
+$var wire 1 E LD1|comb~0_combout $end
+$var wire 1 F LD1|Q~combout $end
+$var wire 1 G I0~input_o $end
+$var wire 1 H LD0|comb~0_combout $end
+$var wire 1 I LD0|Q~combout $end
+$var wire 1 J c~inputclkctrl_outclk $end
+$var wire 1 K FFD3|O~feeder_combout $end
+$var wire 1 L FFD3|O~q $end
+$var wire 1 M FFD2|O~feeder_combout $end
+$var wire 1 N FFD2|O~q $end
+$var wire 1 O FFD1|O~feeder_combout $end
+$var wire 1 P FFD1|O~q $end
+$var wire 1 Q FFD0|O~q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+1#
+1$
+1%
+0&
+0'
+0(
+0)
+1*
+1+
+1,
+1-
+x.
+0/
+10
+x1
+12
+13
+14
+15
+16
+17
+18
+09
+0:
+0;
+0<
+1=
+1>
+0?
+1@
+1A
+0B
+1C
+1D
+0E
+1F
+1G
+0H
+1I
+1J
+1K
+0L
+1M
+0N
+1O
+0P
+0Q
+$end
+#60000
+0"
+0$
+0%
+0G
+0A
+0>
+0.
+1H
+0M
+1B
+0K
+1?
+0I
+0C
+0@
+08
+06
+05
+0*
+0,
+0-
+#120000
+0!
+0#
+1%
+0=
+0D
+1>
+0J
+1.
+0H
+0B
+0?
+0O
+1K
+#180000
+1$
+1#
+1A
+1D
+0.
+1M
+1O
+#200000
+1!
+1=
+1J
+1.
+1H
+1I
+1C
+1@
+18
+16
+15
+1*
+1,
+1-
+0I
+08
+0*
+1P
+1N
+1L
+1;
+1:
+19
+1'
+1(
+1)
+#240000
+0$
+0#
+0!
+0A
+0D
+0=
+0J
+0.
+0M
+0O
+0H
+#300000
+1"
+0%
+1$
+1G
+0>
+1A
+1.
+0K
+1M
+#400000
+1!
+1=
+1J
+0.
+1E
+1?
+1I
+18
+1*
+0F
+0@
+07
+05
+0+
+0-
+1Q
+0P
+0L
+1<
+0;
+09
+1&
+0'
+0)
+#420000
+1#
+1D
+1.
+1O
+0E
+1F
+17
+1+
+#480000
+0"
+0#
+0G
+0D
+0.
+1H
+0O
+1E
+0I
+0F
+08
+07
+0*
+0+
+#520000
+0!
+0=
+0J
+1.
+0H
+0E
+0?
+#540000
+1%
+1"
+1#
+1>
+1G
+1D
+0.
+1K
+1O
+#560000
+1!
+1=
+1J
+1.
+1I
+1F
+1@
+18
+17
+15
+1*
+1+
+1-
+1P
+1L
+1;
+19
+1'
+1)
+#600000
+0$
+0%
+0"
+0#
+0A
+0>
+0G
+0D
+0.
+0M
+1B
+0K
+1?
+1H
+0O
+1E
+0C
+0@
+0I
+0F
+06
+05
+08
+07
+0,
+0-
+0*
+0+
+#660000
+1%
+1"
+1>
+1G
+1.
+1K
+0?
+0H
+1@
+1I
+15
+18
+1-
+1*
+#720000
+0!
+1$
+0=
+1A
+0J
+0.
+0E
+0B
+1M
+#780000
+0%
+0$
+0>
+0A
+1.
+0K
+0M
+#840000
+0"
+1$
+0G
+1A
+0.
+1M
+#900000
+1"
+0$
+1G
+0A
+1.
+0M
+#920000
+1!
+1=
+1J
+0.
+1E
+1B
+1?
+1F
+1C
+17
+16
+1+
+1,
+0F
+0C
+0@
+07
+06
+05
+0+
+0,
+0-
+0P
+0N
+0L
+0;
+0:
+09
+0'
+0(
+0)
+#960000
+1$
+0!
+1A
+0=
+0J
+1.
+1M
+0B
+0E
+0?
+#1000000

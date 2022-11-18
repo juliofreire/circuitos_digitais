@@ -1,0 +1,87 @@
+|relatorio5
+I3 => latchD:LD3.D
+I3 => flipflopD:FFD3.S
+I2 => latchD:LD2.D
+I2 => flipflopD:FFD2.S
+I1 => latchD:LD1.D
+I1 => flipflopD:FFD1.S
+I0 => latchD:LD0.D
+I0 => flipflopD:FFD0.S
+c => latchD:LD3.c
+c => latchD:LD2.c
+c => latchD:LD1.c
+c => latchD:LD0.c
+c => flipflopD:FFD3.c
+c => flipflopD:FFD2.c
+c => flipflopD:FFD1.c
+c => flipflopD:FFD0.c
+Q3 << latchD:LD3.Q
+Q2 << latchD:LD2.Q
+Q1 << latchD:LD1.Q
+Q0 << latchD:LD0.Q
+O3 << flipflopD:FFD3.O
+O2 << flipflopD:FFD2.O
+O1 << flipflopD:FFD1.O
+O0 << flipflopD:FFD0.O
+
+
+|relatorio5|latchD:LD3
+D => process_0.IN0
+D => process_0.IN0
+c => process_0.IN1
+c => process_0.IN1
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relatorio5|latchD:LD2
+D => process_0.IN0
+D => process_0.IN0
+c => process_0.IN1
+c => process_0.IN1
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relatorio5|latchD:LD1
+D => process_0.IN0
+D => process_0.IN0
+c => process_0.IN1
+c => process_0.IN1
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relatorio5|latchD:LD0
+D => process_0.IN0
+D => process_0.IN0
+c => process_0.IN1
+c => process_0.IN1
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relatorio5|flipflopD:FFD3
+S => O.OUTPUTSELECT
+S => O.OUTPUTSELECT
+c => O~reg0.CLK
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relatorio5|flipflopD:FFD2
+S => O.OUTPUTSELECT
+S => O.OUTPUTSELECT
+c => O~reg0.CLK
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relatorio5|flipflopD:FFD1
+S => O.OUTPUTSELECT
+S => O.OUTPUTSELECT
+c => O~reg0.CLK
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|relatorio5|flipflopD:FFD0
+S => O.OUTPUTSELECT
+S => O.OUTPUTSELECT
+c => O~reg0.CLK
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
