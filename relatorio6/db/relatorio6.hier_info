@@ -1,0 +1,18 @@
+|relatorio6
+clk => tc~reg0.CLK
+clk => qv[0].CLK
+clk => qv[1].CLK
+clk => qv[2].CLK
+clk => qv[3].CLK
+clr => qv[0].PRESET
+clr => qv[1].PRESET
+clr => qv[2].PRESET
+clr => qv[3].PRESET
+clr => tc~reg0.ENA
+tc <= tc~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= qv[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= qv[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= qv[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= qv[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
