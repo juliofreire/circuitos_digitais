@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity data_path is
+port(
+	rt1, rt2 : in bit;
+	t1, t2 : out bit
+	clk : in bit;
+);
+end data_path;
+
+architecture main of data_path is
+
+
+	signal and_out, sub_in;
+	
+	
+	component decrementor is
+	port(clk : in bit;
+			T : in integer;
+			tc : out bit);
+			q : out integer
+	end component;
+	
+	begin process(clk)
+		variable T1 : integer range 20 downto 0;
+		variable T2 : integer range 5 downto 0;
+	
+	begin
+	
+	sub_in <= T1 when()
+	
+	decrement_inst : decrementor PORT MAP()
+	out1 <= in1 or in2;
+
+end architecture main;

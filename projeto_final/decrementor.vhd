@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity decrementor is
+port(
+	clk_d: in bit;
+	T : in integer;
+	tc : out bit
+);
+end decrementor;
+
+architecture main of decrementor is
+
+	begin process(clk_d)
+		variable Tv: integer range T downto 0;
+		
+	begin
+		if(clk_d 'event and clk_d = '1') then
+			if(Tv=1)then
+				tc<='1';
+				Tv := Tv-1;
+			elsif(Tv = 0) then
+				Tv := 15;
+				tc <= '0';
+			else 
+				Tv := Tv-1;
+				tc<= '0';
+			end if;
+		end if;
+--T <= Tv;
+	end process;
+
+end architecture main;
