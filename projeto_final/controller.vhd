@@ -6,7 +6,7 @@ port(
 		N, t1, t2 : in bit;
 		b1, b2, rt1, rt2 : out bit;
 		clk: in bit;
-		--btn_reset: in bit;
+		btn_reset: in bit;
 		c0, c1 : out bit
 );
 end controller;
@@ -15,21 +15,21 @@ architecture main of controller is
 
 	signal s1, s0, n1, n0: bit;
 		
-	begin process(clk, N, s1, s0, n1, n0)
+	begin process(clk, N, s1, s0, n1, n0, btn_reset)
 	begin
-	
---		if (btn_reset='1') then			
-	--		n1 <= '0';
-		--	n0 <= '0';
-			--rt1 <= '1';
-		--end if;
-		
 		s1 <= n1;
 		s0 <= n0;
 		c0 <= s0;
 		c1 <= s1;
+		if ((clk 'event and clk='1') and btn_reset='1') then			
+			n1 <= '0';
+			n0 <= '0';
+			rt1 <= '1';
+		--end if;
+		
+
 	-- declarar rt1 e rt2;
-		if((clk 'event and clk='1') and (s1= '0' and s0 = '0')) then -- estado init
+		elsif((clk 'event and clk='1') and (s1= '0' and s0 = '0')) then -- estado init
 			n0 <= '1';
 			n1 <= '0';
 			rt1 <= '1';

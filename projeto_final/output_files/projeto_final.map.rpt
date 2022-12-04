@@ -1,5 +1,5 @@
 Analysis & Synthesis report for projeto_final
-Sun Dec 04 01:25:17 2022
+Sun Dec 04 12:56:34 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -16,8 +16,8 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   8. Registers Removed During Synthesis
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Port Connectivity Checks: "data_path:inst_datapath"
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Elapsed Time Per Partition
  14. Analysis & Synthesis Messages
 
@@ -45,16 +45,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 04 01:25:17 2022      ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 04 12:56:34 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; projeto_final                              ;
 ; Top-level Entity Name              ; projeto_final                              ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 5                                          ;
-;     Total combinational functions  ; 5                                          ;
-;     Dedicated logic registers      ; 4                                          ;
-; Total registers                    ; 4                                          ;
-; Total pins                         ; 6                                          ;
+; Total logic elements               ; 30                                         ;
+;     Total combinational functions  ; 27                                         ;
+;     Dedicated logic registers      ; 19                                         ;
+; Total registers                    ; 19                                         ;
+; Total pins                         ; 41                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -174,18 +174,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+--------------------------+----------------------------+
-; Resource                 ; Usage                      ;
-+--------------------------+----------------------------+
-; I/O pins                 ; 6                          ;
-; DSP block 9-bit elements ; 0                          ;
-; Maximum fan-out node     ; controller:inst_control|n0 ;
-; Maximum fan-out          ; 6                          ;
-; Total fan-out            ; 31                         ;
-; Average fan-out          ; 1.48                       ;
-+--------------------------+----------------------------+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 41               ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; clk~input        ;
+; Maximum fan-out          ; 19               ;
+; Total fan-out            ; 163              ;
+; Average fan-out          ; 1.27             ;
++--------------------------+------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -193,56 +193,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Library Name ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------+--------------+
-; |projeto_final               ; 5 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 6    ; 0            ; |projeto_final                         ; work         ;
-;    |controller:inst_control| ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |projeto_final|controller:inst_control ; work         ;
+; |projeto_final               ; 27 (0)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 41   ; 0            ; |projeto_final                         ; work         ;
+;    |controller:inst_control| ; 11 (11)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |projeto_final|controller:inst_control ; work         ;
+;    |data_path:inst_datapath| ; 16 (16)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |projeto_final|data_path:inst_datapath ; work         ;
 +------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                            ;
-+----------------------------------------+--------------------------------------+
-; Register name                          ; Reason for Removal                   ;
-+----------------------------------------+--------------------------------------+
-; data_path:inst_datapath|t2             ; Stuck at GND due to stuck port clock ;
-; data_path:inst_datapath|sub_in[0]      ; Stuck at VCC due to stuck port clock ;
-; data_path:inst_datapath|tc             ; Stuck at GND due to stuck port clock ;
-; data_path:inst_datapath|Tv[31]         ; Stuck at VCC due to stuck port clock ;
-; data_path:inst_datapath|Tv[1..30]      ; Stuck at GND due to stuck port clock ;
-; data_path:inst_datapath|t1             ; Stuck at GND due to stuck port clock ;
-; data_path:inst_datapath|Tv[0]          ; Stuck at VCC due to stuck port clock ;
-; data_path:inst_datapath|sub_in[1..30]  ; Stuck at GND due to stuck port clock ;
-; data_path:inst_datapath|sub_in[31]     ; Stuck at VCC due to stuck port clock ;
-; controller:inst_control|rt2            ; Lost fanout                          ;
-; controller:inst_control|rt1            ; Lost fanout                          ;
-; Total Number of Removed Registers = 69 ;                                      ;
-+----------------------------------------+--------------------------------------+
++----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                     ;
++----------------------------------------+-----------------------------------------------+
+; Register name                          ; Reason for Removal                            ;
++----------------------------------------+-----------------------------------------------+
+; data_path:inst_datapath|T[5..30]       ; Stuck at GND due to stuck port data_in        ;
+; data_path:inst_datapath|sub_in[1]      ; Stuck at GND due to stuck port data_in        ;
+; data_path:inst_datapath|sub_in[2]      ; Stuck at VCC due to stuck port data_in        ;
+; data_path:inst_datapath|sub_in[3]      ; Stuck at GND due to stuck port data_in        ;
+; data_path:inst_datapath|sub_in[4]      ; Merged with data_path:inst_datapath|sub_in[0] ;
+; Total Number of Removed Registers = 30 ;                                               ;
++----------------------------------------+-----------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                           ;
-+-----------------------------------+-------------------------+-------------------------------------------------------------------------+
-; Register name                     ; Reason for Removal      ; Registers Removed due to This Register                                  ;
-+-----------------------------------+-------------------------+-------------------------------------------------------------------------+
-; data_path:inst_datapath|tc        ; Stuck at GND            ; data_path:inst_datapath|t1, data_path:inst_datapath|sub_in[1],          ;
-;                                   ; due to stuck port clock ; data_path:inst_datapath|sub_in[2], data_path:inst_datapath|sub_in[3],   ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[4], data_path:inst_datapath|sub_in[5],   ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[6], data_path:inst_datapath|sub_in[7],   ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[8], data_path:inst_datapath|sub_in[9],   ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[10], data_path:inst_datapath|sub_in[11], ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[12], data_path:inst_datapath|sub_in[13], ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[14], data_path:inst_datapath|sub_in[15], ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[16], data_path:inst_datapath|sub_in[17], ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[18], data_path:inst_datapath|sub_in[19], ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[20], data_path:inst_datapath|sub_in[21], ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[22], data_path:inst_datapath|sub_in[23], ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[24], data_path:inst_datapath|sub_in[25], ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[26], data_path:inst_datapath|sub_in[27], ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[28], data_path:inst_datapath|sub_in[29], ;
-;                                   ;                         ; data_path:inst_datapath|sub_in[30], data_path:inst_datapath|sub_in[31]  ;
-; data_path:inst_datapath|sub_in[0] ; Stuck at VCC            ; data_path:inst_datapath|Tv[0], controller:inst_control|rt2,             ;
-;                                   ; due to stuck port clock ; controller:inst_control|rt1                                             ;
-+-----------------------------------+-------------------------+-------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                        ;
++-------------------------------+---------------------------+----------------------------------------+
+; Register name                 ; Reason for Removal        ; Registers Removed due to This Register ;
++-------------------------------+---------------------------+----------------------------------------+
+; data_path:inst_datapath|T[8]  ; Stuck at GND              ; data_path:inst_datapath|sub_in[3]      ;
+;                               ; due to stuck port data_in ;                                        ;
+; data_path:inst_datapath|T[9]  ; Stuck at GND              ; data_path:inst_datapath|sub_in[2]      ;
+;                               ; due to stuck port data_in ;                                        ;
+; data_path:inst_datapath|T[10] ; Stuck at GND              ; data_path:inst_datapath|sub_in[1]      ;
+;                               ; due to stuck port data_in ;                                        ;
++-------------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -250,32 +233,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 4     ;
+; Total registers                              ; 19    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 2     ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |projeto_final|controller:inst_control|b1 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; data_path:inst_datapath|T[0]           ; 1       ;
+; data_path:inst_datapath|T[31]          ; 1       ;
+; data_path:inst_datapath|Tv[2]          ; 3       ;
+; data_path:inst_datapath|Tv[4]          ; 3       ;
+; Total number of inverted registers = 4 ;         ;
++----------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "data_path:inst_datapath"                                                                                                                     ;
-+-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                                                                                                                      ;
-+-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; clk_d ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |projeto_final|data_path:inst_datapath|Tv[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 
 
 +-------------------------------+
@@ -293,7 +280,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Dec 04 01:25:13 2022
+    Info: Processing started: Sun Dec 04 12:56:31 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_final -c projeto_final
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file projeto_final.vhd
@@ -311,25 +298,47 @@ Info (12021): Found 2 design units, including 1 entities, in source file decreme
 Info (12127): Elaborating entity "projeto_final" for the top level hierarchy
 Info (12128): Elaborating entity "controller" for hierarchy "controller:inst_control"
 Info (12128): Elaborating entity "data_path" for hierarchy "data_path:inst_datapath"
-Warning (10543): VHDL Variable Declaration warning at data_path.vhd(20): used default initial value for variable "c1" because variable was never assigned a value or an initial value expression. Use of default initial value may introduce unintended design optimizations.
-Warning (10543): VHDL Variable Declaration warning at data_path.vhd(21): used default initial value for variable "c2" because variable was never assigned a value or an initial value expression. Use of default initial value may introduce unintended design optimizations.
-Warning (10492): VHDL Process Statement warning at data_path.vhd(24): signal "tc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at data_path.vhd(27): signal "tc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at data_path.vhd(45): signal "tc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at data_path.vhd(48): signal "tc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (10543): VHDL Variable Declaration warning at data_path.vhd(21): used default initial value for variable "c1" because variable was never assigned a value or an initial value expression. Use of default initial value may introduce unintended design optimizations.
+Warning (10543): VHDL Variable Declaration warning at data_path.vhd(22): used default initial value for variable "c2" because variable was never assigned a value or an initial value expression. Use of default initial value may introduce unintended design optimizations.
+Warning (10492): VHDL Process Statement warning at data_path.vhd(25): signal "btn_reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "T[5]" is stuck at GND
+    Warning (13410): Pin "T[6]" is stuck at GND
+    Warning (13410): Pin "T[7]" is stuck at GND
+    Warning (13410): Pin "T[8]" is stuck at GND
+    Warning (13410): Pin "T[9]" is stuck at GND
+    Warning (13410): Pin "T[10]" is stuck at GND
+    Warning (13410): Pin "T[11]" is stuck at GND
+    Warning (13410): Pin "T[12]" is stuck at GND
+    Warning (13410): Pin "T[13]" is stuck at GND
+    Warning (13410): Pin "T[14]" is stuck at GND
+    Warning (13410): Pin "T[15]" is stuck at GND
+    Warning (13410): Pin "T[16]" is stuck at GND
+    Warning (13410): Pin "T[17]" is stuck at GND
+    Warning (13410): Pin "T[18]" is stuck at GND
+    Warning (13410): Pin "T[19]" is stuck at GND
+    Warning (13410): Pin "T[20]" is stuck at GND
+    Warning (13410): Pin "T[21]" is stuck at GND
+    Warning (13410): Pin "T[22]" is stuck at GND
+    Warning (13410): Pin "T[23]" is stuck at GND
+    Warning (13410): Pin "T[24]" is stuck at GND
+    Warning (13410): Pin "T[25]" is stuck at GND
+    Warning (13410): Pin "T[26]" is stuck at GND
+    Warning (13410): Pin "T[27]" is stuck at GND
+    Warning (13410): Pin "T[28]" is stuck at GND
+    Warning (13410): Pin "T[29]" is stuck at GND
+    Warning (13410): Pin "T[30]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 5 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4713 megabytes
-    Info: Processing ended: Sun Dec 04 01:25:17 2022
-    Info: Elapsed time: 00:00:04
+Info (21057): Implemented 71 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 38 output pins
+    Info (21061): Implemented 30 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Sun Dec 04 12:56:34 2022
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 
